@@ -27,9 +27,20 @@ def is_prime2(n):
             return False
     return True
 
+# Function find_prime v.3
+# =======================
+def is_prime3(n):
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+
+
 prime_factors = []
-for i in range(1, 13195):
+for i in range(1, 100000):
     if is_prime2(i) == True:
+        print(i)
         prime_factors.append(i)
     else:
         pass
