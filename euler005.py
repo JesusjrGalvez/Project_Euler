@@ -33,7 +33,6 @@ counter = 1
 while solution == False:
     if is_factor(counter, divisors) == False:
         counter += 1
-        pass
     else:
         print(counter)
         counter == True
