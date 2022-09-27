@@ -16,7 +16,7 @@ print(f"Max value is {max_value}")
 print(f"Max key is {max_key}")
 print(f"Key with max value is {key_with_max_value}")
 
-tem=mydict.get
+tem=mydict.get # This is a method
 print(type(tem))
 
 print(mydict.get("hola", 5)) # Will search for key="hola" and if it's not found will return 5
