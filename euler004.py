@@ -16,7 +16,7 @@ palindromes = dict()
 for i in range(999, 100, -1):
     for j in range(999, 100, -1):
         k = i * j
-        if is_palindrome(k) == True:
+        if is_palindrome(k):
             palindromes[k] = i, j
         else:
             pass
