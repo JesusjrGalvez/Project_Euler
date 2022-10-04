@@ -4,7 +4,7 @@
 # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 #
 # By considering the terms in the Fibonacci sequence whose values do not exceed
-# our million, find the sum of the even-valued terms.
+# four million, find the sum of the even-valued terms.
 
 
 # Solution #1
@@ -25,12 +25,36 @@
 # Solution #2
 # ===========
 
-sum = 0
-i, j = 1, 2
-while j < 4000000:
-    if j % 2 == 0:
-        sum += j
-    i, j = j, j + i
+# sum = 0
+# i, j = 1, 2
+# while j < 4000000:
+#     if j % 2 == 0:
+#         sum += j
+#     i, j = j, j + i
+#
+# print(sum)
 
-print(sum)
 
+def fib(n):
+    if n < 2:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+
+
+
+
+
+def fib(n):
+    i, j = 1, 2
+    for index in range(n):
+        i, j = j, j + i
+    return i
+
+
+for i in range(10):
+    print(i, fib(i))
+
+0, 1, 2
+1, 2, 3
+2, 3, 5
