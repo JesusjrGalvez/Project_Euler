@@ -55,6 +55,3 @@ def fib(n):
 for i in range(10):
     print(i, fib(i))
 
-0, 1, 2
-1, 2, 3
-2, 3, 5
